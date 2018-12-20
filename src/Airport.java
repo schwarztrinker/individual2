@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Airport {
 	String name;
@@ -6,10 +7,11 @@ public class Airport {
 	ArrayList<Airplane> airplanes;
 	ArrayList<Baggage> baggages;
 	
-	public Airport(String name, int amountBaggageSortingUnit, ArrayList<Baggage> baggages){
+	public Airport(String name, ArrayList<Baggage> baggages){
 		this.name = name;
-		BaggageSortingUnit baggageSortingUnit = new BaggageSortingUnit();	
+		this.baggageSortingUnit = new BaggageSortingUnit();
 		airplanes = new ArrayList<Airplane>();
+		this.baggages = new ArrayList<Baggage>();
 	}
 	
 	public void addAirplane(Airplane airplane){
