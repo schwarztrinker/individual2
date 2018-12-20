@@ -9,7 +9,7 @@ public class Airport {
 	
 	public Airport(String name, ArrayList<Baggage> baggages){
 		this.name = name;
-		this.baggageSortingUnit = new BaggageSortingUnit();
+		baggageSortingUnit = new BaggageSortingUnit();
 		airplanes = new ArrayList<Airplane>();
 		this.baggages = new ArrayList<Baggage>();
 	}
