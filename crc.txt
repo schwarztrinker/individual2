@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Airplane",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Getting the Baggage Array according to their Flight Number"
+    ],
+    "collaborators": [
+      "Airport ",
+      "BaggageSortingUnit"
+    ]
+  },
+  {
+    "name": "BaggageSortingUnit",
+    "superclasses": "",
+    "subclasses": "Baggage",
+    "type": 1,
+    "responsibilities": [
+      "Sorts Baggage by: ",
+      "    flightNumber ",
+      "    type",
+      "put arrays to airplanes"
+    ],
+    "collaborators": [
+      ""
+    ]
+  },
+  {
+    "name": "IBaggageSortingUnit",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 3,
+    "responsibilities": [
+      "provides methods"
+    ],
+    "collaborators": [
+      "BaggageSortingUnit"
+    ]
+  },
+  {
+    "name": "Airport",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Provides Build of all classes "
+    ],
+    "collaborators": [
+      "All"
+    ]
+  },
+  {
+    "name": "Baggage",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "All Baggage Atrributes",
+      "Getter/Setter Methods ",
+      "Input for all important Hashmaps an Arrays"
+    ],
+    "collaborators": [
+      "BaggageSortingUnit"
+    ]
+  }
+]
