@@ -1,14 +1,13 @@
-package individual2;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class AirportTest {
+class BaggageTest {
+
 
 	@Test
 	void test() {
-		fail("Not yet implemented");
+		Baggage baggage = new Baggage("Koffer1", "Klamotten" , 15.0, null, "LH380");
 	}
 
 }
